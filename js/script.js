@@ -12,23 +12,23 @@ class Employee {
         this.salary = salary;
     }
 
-    get FullName () {
-        console.log(`${this.firsName} ${this.lastName}`);
+    get fullName () {
+        return `${this.firsName} ${this.lastName}`;
     }
 
-    annualSalary () {
+    isAnnualSalary () {
         console.log(this.salary * 12);
     }
 }
 
-const Employee1 = new Employee ('Mike', 'Vakovski', 91, 'Manager', 3053);
+const employeeOne = new Employee ('Mike', 'Vakovski', 91, 'Manager', 3053);
 
-console.log(Employee1);
-Employee1.FullName;
-Employee1.annualSalary();
+console.log(employeeOne);
+console.log(employeeOne.fullName);
+employeeOne.isAnnualSalary();
 
-const Employee2 = new Employee ('Bob', 'Marli', 31, 'Singer', 35);
+const employeeTwo = new Employee ('Bob', 'Marli', 31, 'Singer', 35);
 
-console.log(Employee2);
-Employee2.FullName;
-Employee2.annualSalary();
+console.log(employeeTwo);
+console.log(employeeTwo.fullName);
+employeeTwo.isAnnualSalary();
