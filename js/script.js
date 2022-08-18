@@ -16,7 +16,7 @@ class Employee {
         return `${this.firsName} ${this.lastName}`;
     }
 
-    isAnnualSalary () {
+    getYearSalary () {
         console.log(this.salary * 12);
     }
 }
@@ -25,10 +25,10 @@ const employeeOne = new Employee ('Mike', 'Vakovski', 91, 'Manager', 3053);
 
 console.log(employeeOne);
 console.log(employeeOne.fullName);
-employeeOne.isAnnualSalary();
+employeeOne.getYearSalary();
 
 const employeeTwo = new Employee ('Bob', 'Marli', 31, 'Singer', 35);
 
 console.log(employeeTwo);
 console.log(employeeTwo.fullName);
-employeeTwo.isAnnualSalary();
+employeeTwo.getYearSalary();
